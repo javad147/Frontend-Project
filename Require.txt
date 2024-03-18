@@ -1,0 +1,12 @@
+Home - https://shofy-angular.vercel.app/home/electronic   -  20bal
+Shop - https://shofy-angular.vercel.app/shop  - 10bal
+Product-detail - https://shofy-angular.vercel.app/shop/shop-details/641e887d05f9ee1717e1348f  - 10bal
+Blog - https://shofy-angular.vercel.app/pages/blog - 10bal
+Contact - https://shofy-angular.vercel.app/pages/contact - 5bal
+Login - https://shofy-angular.vercel.app/pages/login - 2.5bal
+Register - https://shofy-angular.vercel.app/pages/register - 2.5bal
+Basket + cart page - 15bal
+Wishlist + wishlist page - 10bal
+
+Minimum 10 eded commit - 5bal
+Responsivlik - 10 bal  - home 2bal, digerleri 1 bal
