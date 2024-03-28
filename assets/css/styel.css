@@ -12492,7 +12492,7 @@ div.tp-blog-thumb img {
 }
 .tp-login-remeber label::after {
   position: absolute;
-  content: "";
+  content: url('../image/product/check.svg');
   top: 4px;
   left: 0;
   width: 18px;
@@ -12742,7 +12742,7 @@ div.tp-blog-thumb img {
 }
 .tp-contact-remeber label::after {
   position: absolute;
-  content: "";
+  content: url('../image/product/check.svg');
   top: 4px;
   left: 0;
   width: 18px;
@@ -17843,7 +17843,7 @@ product all slider
 }
 .tp-product-details-review-remeber label::after {
   position: absolute;
-  content: "";
+  content: url('../image/product/check.svg');
   top: 4px;
   left: 0;
   width: 18px;
@@ -18481,7 +18481,7 @@ product all slider
 }
 .tp-shop-widget-checkbox ul li label::before {
   position: absolute;
-  content: url("../img/product/icons/check.svg");
+  content: url("../image/product/check.svg");
   top: 6px;
   left: 0;
   width: 16px;
