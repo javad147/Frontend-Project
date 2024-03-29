@@ -1,17 +1,11 @@
-/*!
- * Countdown v0.1.0
- * https://github.com/fengyuanchen/countdown
- *
- * Copyright 2014 Fengyuan Chen
- * Released under the MIT license
- */
+
 
 (function (factory) {
     if (typeof define === "function" && define.amd) {
-        // AMD. Register as anonymous module.
+        
         define(["jquery"], factory);
     } else {
-        // Browser globals.
+        
         factory(jQuery);
     }
 })(function ($) {
@@ -213,7 +207,7 @@
                     this.$days.text(this.days);
                     break;
 
-                // No default
+                
             }
         },
 
@@ -230,7 +224,7 @@
         }
     };
 
-    // Default settings
+    
     Countdown.defaults = {
         autoStart: true,
         date: null,
@@ -239,12 +233,12 @@
         text: "%s days, %s hours, %s minutes, %s seconds"
     };
 
-    // Set default settings
+    
     Countdown.setDefaults = function (options) {
         $.extend(Countdown.defaults, options);
     };
 
-    // Register as jQuery plugin
+    
     $.fn.countdown = function (options) {
         return this.each(function () {
             var $this = $(this),

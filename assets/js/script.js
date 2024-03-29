@@ -1,35 +1,11 @@
-/***************************************************
-==================== JS INDEX ======================
-****************************************************
-01. PreLoader Js
-02. Mobile Menu Js
-03. Common Js
-04. Menu Controls JS
-05. Offcanvas Js
-06. Search Js
-07. cartmini Js
-08. filter
-09. Body overlay Js
-10. Sticky Header Js
-11. Theme Settings Js
-12. Nice Select Js
-13. Smooth Scroll Js
-14. Slider Activation Area Start
-15. Masonary Js
-16. Wow Js
-17. Counter Js
-18. InHover Active Js
-19. Line Animation Js
-20. Video Play Js
-21. Password Toggle Js
-****************************************************/
+
 
 (function ($) {
 	"use strict";
 
 	var windowOn = $(window);
-	////////////////////////////////////////////////////
-	// 01. PreLoader Js
+	
+	
 	windowOn.on('load', function () {
 		$("#loading").fadeOut(500);
 	});
@@ -45,8 +21,8 @@
 		});
 	  }
 
-	////////////////////////////////////////////////////
-	// 02. Mobile Menu Js
+	
+	
 	$('#mobile-menu').meanmenu({
 		meanMenuContainer: '.mobile-menu',
 		meanScreenWidth: "991",
@@ -59,8 +35,8 @@
 		meanExpand: ['<i class="fa-regular fa-angle-right"></i>'],
 	});
 
-	////////////////////////////////////////////////////
-	// 03. Common Js
+	
+	
 
 	$("[data-background").each(function () {
 		$(this).css("background-image", "url( " + $(this).attr("data-background") + "  )");
@@ -327,212 +303,6 @@
 		}
 	});
 
-
-
-
-	// ////////////////////////////////////////////////////
-	// // 11. Theme Settings Js
-
-	// // settings append in body
-	// function tp_settings_append($x){
-	// 	var settings = $('body');
-	// 	let dark;
-	// 	$x == true ? dark = 'd-block' : dark = 'd-none';
-	// 	var settings_html = `<div class="tp-theme-settings-area transition-3">
-	// 	<div class="tp-theme-wrapper">
-	// 	   <div class="tp-theme-header text-center">
-	// 		  <h4 class="tp-theme-header-title">Harry Theme Settings</h4>
-	// 	   </div>
-
-	// 	   <!-- THEME TOGGLER -->
-	// 	   <div class="tp-theme-toggle mb-20 ${dark}">
-	// 		  <label class="tp-theme-toggle-main" for="tp-theme-toggler">
-	// 			 <span class="tp-theme-toggle-dark"><i class="fa-light fa-moon"></i> Dark</span>
-	// 				<input type="checkbox" id="tp-theme-toggler">
-	// 				<i class="tp-theme-toggle-slide"></i>
-	// 			 <span class="tp-theme-toggle-light active"><i class="fa-light fa-sun-bright"></i> Light</span>
-	// 		  </label>
-	// 	   </div>
-
-	// 	   <!--  RTL SETTINGS -->
-	// 	   <div class="tp-theme-dir mb-20">
-	// 		  <label class="tp-theme-dir-main" for="tp-dir-toggler">
-	// 			 <span class="tp-theme-dir-rtl"> RTL</span>
-	// 				<input type="checkbox" id="tp-dir-toggler">
-	// 				<i class="tp-theme-dir-slide"></i>
-	// 			 <span class="tp-theme-dir-ltr active"> LTR</span>
-	// 		  </label>
-	// 	   </div>
-
-	// 	   <!-- COLOR SETTINGS -->
-	// 	   <div class="tp-theme-settings">
-	// 		  <div class="tp-theme-settings-wrapper">
-	// 			 <div class="tp-theme-settings-open">
-	// 				<button class="tp-theme-settings-open-btn">
-	// 				   <span class="tp-theme-settings-gear">
-	// 					  <i class="fa-light fa-gear"></i>
-	// 				   </span>
-	// 				   <span class="tp-theme-settings-close">
-	// 					  <i class="fa-regular fa-xmark"></i>
-	// 				   </span>
-	// 				</button>
-	// 			 </div>
-	// 			 <div class="row row-cols-4 gy-2 gx-2">
-	// 				<div class="col">
-	// 				   <div class="tp-theme-color-item tp-color-active">
-	// 					  <button class="tp-theme-color-btn tp-color-settings-btn d-none" data-color-default="#0989FF" type="button" data-color="#0989FF"></button>
-	// 					  <button class="tp-theme-color-btn tp-color-settings-btn" type="button" data-color="#0989FF"></button>
-	// 				   </div>
-	// 				</div>
-	// 				<div class="col">
-	// 				   <div class="tp-theme-color-item tp-color-active">
-	// 					  <button class="tp-theme-color-btn tp-color-settings-btn" type="button" data-color="#821F40"></button>
-	// 				   </div>
-	// 				</div>
-	// 				<div class="col">
-	// 				   <div class="tp-theme-color-item tp-color-active">
-	// 					  <button class="tp-theme-color-btn tp-color-settings-btn" type="button" data-color="#BD844C"></button>
-	// 				   </div>
-	// 				</div>
-	// 				<div class="col">
-	// 				   <div class="tp-theme-color-item tp-color-active">
-	// 					  <button class="tp-theme-color-btn tp-color-settings-btn" type="button" data-color="#678E61"></button>
-	// 				   </div>
-	// 				</div>
-	// 				<div class="col">
-	// 				   <div class="tp-theme-color-item tp-color-active">
-	// 					  <button class="tp-theme-color-btn tp-color-settings-btn" type="button" data-color="#FD4B6B"></button>
-	// 				   </div>
-	// 				</div>
-	// 				<div class="col">
-	// 				   <div class="tp-theme-color-item tp-color-active">
-	// 					  <button class="tp-theme-color-btn tp-color-settings-btn" type="button" data-color="#AB9774"></button>
-	// 				   </div>
-	// 				</div>
-	// 				<div class="col">
-    //                     <div class="tp-theme-color-item tp-color-active">
-    //                        <button class="tp-theme-color-btn tp-color-settings-btn" type="button" data-color="#FF6736"></button>
-    //                     </div>
-    //                  </div>
-	// 				<div class="col">
-	// 				   <div class="tp-theme-color-item tp-color-active">
-	// 					  <button class="tp-theme-color-btn tp-color-settings-btn" type="button" data-color="#FFD43A"></button>
-	// 				   </div>
-	// 				</div>
-	// 			 </div>
-	// 		  </div>
-	// 		  <div class="tp-theme-color-input">
-	// 			 <h6>Choose Custom Color</h6>
-	// 			 <input type="color" id="tp-color-setings-input" value="#F50963">
-	// 			 <label id="tp-theme-color-label" for="tp-color-setings-input"></label>
-	// 		  </div>
-	// 	   </div>
-	// 	</div>
-	//  </div>`;
-	//  settings.append(settings_html);
-	// }
-	// tp_settings_append(false); // if want to enable dark light mode then send "true";
-
-	// // settings open btn
-	// $(".tp-theme-settings-open-btn").on("click", function () {
-	// 	$(".tp-theme-settings-area").toggleClass("settings-opened");
-	// });
-
-	// // rtl settings
-	// function tp_rtl_settings() {
-
-	// 	$('#tp-dir-toggler').on("change", function () {
-	// 		toggle_rtl();
-
-	// 	});
-
-
-	// 	// set toggle theme scheme
-	// 	function tp_set_scheme(tp_dir) {
-	// 		localStorage.setItem('tp_dir', tp_dir);
-	// 		document.documentElement.setAttribute("dir", tp_dir);
-
-	// 		if (tp_dir === 'rtl') {
-	// 			var list = $("[href='assets/css/bootstrap.css']");
-	// 			$(list).attr("href", "assets/css/bootstrap-rtl.css");
-	// 		} else {
-	// 			var list = $("[href='assets/css/bootstrap.css']");
-	// 			$(list).attr("href", "assets/css/bootstrap.css");
-	// 		}
-	// 	}
-
-	// 	// toogle theme scheme
-	// 	function toggle_rtl() {
-	// 		if (localStorage.getItem('tp_dir') === 'rtl') {
-	// 			tp_set_scheme('ltr');
-	// 			var list = $("[href='assets/css/bootstrap-rtl.css']");
-	// 			$(list).attr("href", "assets/css/bootstrap.css");
-	// 		} else {
-	// 			tp_set_scheme('rtl');
-	// 			var list = $("[href='assets/css/bootstrap.css']");
-	// 			$(list).attr("href", "assets/css/bootstrap-rtl.css");
-	// 		}
-	// 	}
-
-	// 	// set the first theme scheme
-	// 	function tp_init_dir() {
-	// 		if (localStorage.getItem('tp_dir') === 'rtl') {
-	// 			tp_set_scheme('rtl');
-	// 			var list = $("[href='assets/css/bootstrap.css']");
-	// 			$(list).attr("href", "assets/css/bootstrap-rtl.css");
-	// 			document.getElementById('tp-dir-toggler').checked = true;
-	// 		} else {
-	// 			tp_set_scheme('ltr');
-	// 			document.getElementById('tp-dir-toggler').checked = false;
-	// 			var list = $("[href='assets/css/bootstrap.css']");
-	// 			$(list).attr("href", "assets/css/bootstrap.css");
-	// 		}
-	// 	}
-	// 	tp_init_dir();
-	// }
-	// if ($("#tp-dir-toggler").length > 0) {
-	// 	tp_rtl_settings();
-	// }
-
-	// // dark light mode toggler
-	// function tp_theme_toggler() {
-
-	// 	$('#tp-theme-toggler').on("change", function () {
-	// 		toggleTheme();
-
-	// 	});
-
-
-	// 	// set toggle theme scheme
-	// 	function tp_set_scheme(tp_theme) {
-	// 		localStorage.setItem('tp_theme_scheme', tp_theme);
-	// 		document.documentElement.setAttribute("tp-theme", tp_theme);
-	// 	}
-
-	// 	// toogle theme scheme
-	// 	function toggleTheme() {
-	// 		if (localStorage.getItem('tp_theme_scheme') === 'tp-theme-dark') {
-	// 			tp_set_scheme('tp-theme-light');
-	// 		} else {
-	// 			tp_set_scheme('tp-theme-dark');
-	// 		}
-	// 	}
-
-	// 	// set the first theme scheme
-	// 	function tp_init_theme() {
-	// 		if (localStorage.getItem('tp_theme_scheme') === 'tp-theme-dark') {
-	// 			tp_set_scheme('tp-theme-dark');
-	// 			document.getElementById('tp-theme-toggler').checked = true;
-	// 		} else {
-	// 			tp_set_scheme('tp-theme-light');
-	// 			document.getElementById('tp-theme-toggler').checked = false;
-	// 		}
-	// 	}
-	// 	tp_init_theme();
-	// }
-	// if ($("#tp-theme-toggler").length > 0) {
-	// 	tp_theme_toggler();
-	// }
 
 
 	// color settings
@@ -1805,6 +1575,7 @@
 		selector: ".filesizecount",
 		pulse: 2,
 	});
+	
 
 	////////////////////////////////////////////////////
 	// 18. InHover Active Js
